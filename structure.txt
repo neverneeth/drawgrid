@@ -13,10 +13,7 @@
 │   │   ├── battleship.js   # Battleship logic
 │   │
 │   ├── /images
-│   │   ├── logo.png        # Website logo
-│   │   ├── tic-tac-toe/    # Tic Tac Toe assets
-│   │   ├── connect-4/      # Connect 4 assets
-│   │   ├── battleship/     # Battleship assets
+│   │   ├── 
 │
 │── /games
 │   ├── tic-tac-toe.html    # Tic Tac Toe game page
