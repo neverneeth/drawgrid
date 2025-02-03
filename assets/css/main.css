@@ -1,1 +1,56 @@
+:root {
+    --white-rgb: 255 255 255;
+    --background-rgb: 0 0 0;
+  }
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(var(--background-rgb));
+    margin: 0rem;
+    overflow: hidden;
+    perspective: 2000px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+    width: 140rem;
+    aspect-ratio: 1;
+    display: grid;
+    grid-template-rows: repeat(40, 1fr);
+    grid-template-columns: repeat(40, 1fr);
+    position: absolute;
+}
+
+#container:after,
+#container:before {
+  content: "";
+  position: absolute;
+  inset: 0px;
+  pointer-events: none;
+}
+
+
+.tile {  
+    border: 1px solid rgb(255 255 255 / 25%);
+    transition: background-color 1500ms;
+    border-radius: 7%;
+}
+
+.tile:hover {
+    transition-duration: 0ms;
+}
+
+.tile:not(.active):hover, .tile.active {
+    background-color: rgb(var(--white-rgb));
+}
+  
 

@@ -1,4 +1,4 @@
-/my-game-website
+/final-project
 │── /assets
 │   ├── /css
 │   │   ├── main.css        # Global styles
